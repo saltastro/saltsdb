@@ -2,7 +2,7 @@
 
 import sqlalchemy
 
-__all__ =['SALTSdb']
+__all__ = ['SALTSdb']
 
 
 class SALTSdb:
@@ -28,7 +28,7 @@ class SALTSdb:
     """
 
     def __init__(self, host, dbname, user, passwd, port):
-        sdb = 'mysql+mysqlconnector://{}:{}@{}:{}/{}'.format(user, passwd, host,
-                                                      port, dbname)
+        sdb = 'mysql+mysqlconnector://{}:{}@{}:{}/{}'.format(user, passwd,
+                                                             host, port,
+                                                             dbname)
         self.sdb = sqlalchemy.create_engine(sdb)
- 
