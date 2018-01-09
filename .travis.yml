@@ -37,7 +37,7 @@ env:
 
         
         # Conda dependencies 
-        - CONDA_DEPENDENCIES='astropy sqlalchemy'
+        - CONDA_DEPENDENCIES='astropy sqlalchemy pandas mysql-connector-python'
         
         # List other runtime dependencies for the package that are available as
         # pip packages here.
