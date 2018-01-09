@@ -11,6 +11,6 @@ def test_creation():
 
 
 def test_connection():
-    with pytest.raises(Exception): #sqlalchemy.exc.ProgrammingError):
+    with pytest.raises(Exception): 
         sdb = SALTSdb('sdb', 'sdb', 'sdb', 'sdb', '1111')
         sdb.sdb.connect()
